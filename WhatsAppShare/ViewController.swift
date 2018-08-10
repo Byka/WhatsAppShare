@@ -66,26 +66,13 @@ class ViewController: UIViewController {
                     
                 } else {
                     // Cannot open whatsapp
+                    print("Cannot open whatsapp")
                 }
             }
         }
     }
     
-    /*
-    let image = UIImage(named: "Image") // replace that with your UIImage
-    
-    let filename = "myimage.wai"
-    let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, false)[0] as! NSString
-    let destinationPath = documentsPath.stringByAppendingString("/" + filename).stringByExpandingTildeInPath
-    UIImagePNGRepresentation(image).writeToFile(destinationPath, atomically: false)
-    let fileUrl = NSURL(fileURLWithPath: destinationPath)! as NSURL
-    
-    documentController = UIDocumentInteractionController(URL: fileUrl)
-    documentController.delegate = self
-    documentController.UTI = "net.whatsapp.image"
-    documentController.presentOpenInMenuFromRect(CGRectZero, inView: self.view, animated: false)
-    */
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
