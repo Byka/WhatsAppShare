@@ -12,6 +12,7 @@
 		57B78EEB211D691F00187496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B78EE9211D691F00187496 /* Main.storyboard */; };
 		57B78EED211D692800187496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B78EEC211D692800187496 /* Assets.xcassets */; };
 		57B78EF0211D692800187496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B78EEE211D692800187496 /* LaunchScreen.storyboard */; };
+		57B78EFA211D6D7700187496 /* whatsappIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B78EF9211D6D7600187496 /* whatsappIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		57B78EEC211D692800187496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B78EEF211D692800187496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57B78EF1211D692800187496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B78EF9211D6D7600187496 /* whatsappIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsappIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				57B78EE5211D691F00187496 /* AppDelegate.swift */,
 				57B78EE7211D691F00187496 /* ViewController.swift */,
+				57B78EF9211D6D7600187496 /* whatsappIcon.png */,
 				57B78EE9211D691F00187496 /* Main.storyboard */,
 				57B78EEC211D692800187496 /* Assets.xcassets */,
 				57B78EEE211D692800187496 /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 				57B78EF0211D692800187496 /* LaunchScreen.storyboard in Resources */,
 				57B78EED211D692800187496 /* Assets.xcassets in Resources */,
 				57B78EEB211D691F00187496 /* Main.storyboard in Resources */,
+				57B78EFA211D6D7700187496 /* whatsappIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,14 +287,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69VV5SNA8N;
 				INFOPLIST_FILE = WhatsAppShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "JNET-technologies.WhatsAppShare";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pcctg.itsupport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,14 +306,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69VV5SNA8N;
 				INFOPLIST_FILE = WhatsAppShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "JNET-technologies.WhatsAppShare";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pcctg.itsupport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

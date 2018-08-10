@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,69 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsAppShare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSB-Ol-7qn">
+                                <rect key="frame" x="50" y="183.5" width="275" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Text share">
+                                    <color key="titleColor" red="0.0" green="0.052879427127343004" blue="0.77817357512953367" alpha="0.92424075699999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="textShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MUr-nc-Lx4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFu-3e-UB2">
+                                <rect key="frame" x="50" y="323.5" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mgd-53-MkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Link Share">
+                                    <color key="titleColor" red="0.0" green="0.052879427127343004" blue="0.77817357512953367" alpha="0.92424075699999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAc-6e-mzK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMO-89-bcx">
+                                <rect key="frame" x="50" y="463.5" width="275" height="120"/>
+                                <state key="normal" title="Image Share" backgroundImage="whatsappIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.052879427127343004" blue="0.77817357512953367" alpha="0.92424075699999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8v-hH-skG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8948888747" green="0.9999446273" blue="0.79310827049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bFu-3e-UB2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BhC-ET-Cxm"/>
+                            <constraint firstItem="eSB-Ol-7qn" firstAttribute="width" secondItem="bFu-3e-UB2" secondAttribute="width" id="GRj-tZ-wuq"/>
+                            <constraint firstItem="bFu-3e-UB2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Jl7-YS-hbp"/>
+                            <constraint firstItem="eSB-Ol-7qn" firstAttribute="height" secondItem="bFu-3e-UB2" secondAttribute="height" id="Pod-Oc-20j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bFu-3e-UB2" secondAttribute="trailing" constant="50" id="Qsk-Sg-nyj"/>
+                            <constraint firstItem="PMO-89-bcx" firstAttribute="top" secondItem="bFu-3e-UB2" secondAttribute="bottom" constant="100" id="YPp-ZW-n7l"/>
+                            <constraint firstItem="PMO-89-bcx" firstAttribute="height" secondItem="bFu-3e-UB2" secondAttribute="height" multiplier="3" id="d3I-uD-k0k"/>
+                            <constraint firstItem="eSB-Ol-7qn" firstAttribute="centerX" secondItem="bFu-3e-UB2" secondAttribute="centerX" id="eqC-S7-qX4"/>
+                            <constraint firstItem="bFu-3e-UB2" firstAttribute="top" secondItem="eSB-Ol-7qn" secondAttribute="bottom" constant="100" id="iYp-rE-4sw"/>
+                            <constraint firstItem="PMO-89-bcx" firstAttribute="centerX" secondItem="bFu-3e-UB2" secondAttribute="centerX" id="pq9-vV-4hx"/>
+                            <constraint firstItem="PMO-89-bcx" firstAttribute="width" secondItem="bFu-3e-UB2" secondAttribute="width" id="yHN-Hp-owM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageButton" destination="PMO-89-bcx" id="T5n-aY-fyS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="whatsappIcon.png" width="420" height="420"/>
+    </resources>
 </document>
